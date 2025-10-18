@@ -258,14 +258,14 @@ const Footer = () => {
                 href="#"
                 className="text-slate-600 hover:text-primary text-sm transition-colors duration-200"
               >
-                Français
+                🇫🇷
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-slate-600 hover:text-primary text-sm transition-colors duration-200"
               >
                 English
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
