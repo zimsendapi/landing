@@ -225,12 +225,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900">Email</h3>
-                    <p className="text-slate-600">contact@sms-gateway.com</p>
-                    <p className="text-slate-600">support@sms-gateway.com</p>
+                    <p className="text-slate-600">contact@zimsend.com</p>
+                    <p className="text-slate-600">support@zimsend.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                {/* <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -241,9 +241,9 @@ const Contact = () => {
                     <p className="text-slate-600">+33 1 XX XX XX XX</p>
                     <p className="text-slate-500 text-sm">Lundi - Vendredi, 9h - 18h</p>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="flex items-start space-x-4">
+                {/* <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -257,7 +257,7 @@ const Contact = () => {
                       75001 Paris, France
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 

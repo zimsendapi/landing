@@ -48,7 +48,7 @@ const Pricing = () => {
       name: "STARTER",
       title: "Starter",
       subtitle: "Le plan parfait pour démarrer sérieusement",
-      price: "9.9",
+      price: "9,99",
       features: [
         "300 SMS / jour (5 000 / mois)",
         "100 OTP / jour (3 000 / mois)",
@@ -66,7 +66,7 @@ const Pricing = () => {
       name: "PRO",
       title: "Pro",
       subtitle: "La puissance pour les entreprises",
-      price: "29.9",
+      price: "29,99",
       features: [
         "2 000 SMS / jour (60 000 / mois)",
         "1 000 OTP / jour (30 000 / mois)",
@@ -100,13 +100,21 @@ const Pricing = () => {
     }
   ];
 
+  // Formater le prix avec 2 décimales
+  const formatPrice = (price) => {
+    if (price === null || price === undefined) return "Sur devis";
+    if (price === 0) return "0";
+    const numPrice = typeof price === 'string' ? parseFloat(price) : price;
+    return numPrice.toFixed(2).replace('.', ',');
+  };
+
   // Transformer les données API en format compatible avec l'affichage
   const formatPlansForDisplay = (apiPlans) => {
     return apiPlans.map(plan => ({
       name: plan.id,
       title: plan.title,
       subtitle: plan.subtitle,
-      price: plan.price === null ? "Sur devis" : plan.price.toString(),
+      price: formatPrice(plan.price),
       features: plan.features,
       cta: plan.cta,
       popular: plan.id === 'STARTER', // STARTER est populaire par défaut
@@ -314,7 +322,7 @@ const Pricing = () => {
                         ) : (
                           <>
                             <span className={`text-5xl font-bold ${plan.popular ? colorClasses.text : 'text-slate-900'}`}>
-                              {plan.price}€
+                              {plan.price === "0" ? "0" : plan.price}€
                             </span>
                             <span className={`text-lg ${plan.popular ? 'text-slate-600' : 'text-slate-600'}`}>/mois</span>
                           </>
